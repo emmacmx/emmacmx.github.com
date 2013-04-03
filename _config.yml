@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://emmacmx.github.com
-title: My Octopress Blog
+title: Emmacmx 
 subtitle: A blogging framework for hackers.
-author: Your Name
+author: emmacmx
 simple_search: http://google.com/search
 description:
 
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: "emmacmx@supercloudx.com"
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -65,7 +65,7 @@ github_skip_forks: true
 
 # Twitter
 twitter_user:
-twitter_tweet_button: true
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false
@@ -85,7 +85,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: emmacmx
 disqus_show_comment_count: false
 
 # Google Analytics
