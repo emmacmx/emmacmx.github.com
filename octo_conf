@@ -1,0 +1,47 @@
+<I>ubuntu pre-install ruby:
+
+1. sudo apt-cache search ruby
+ 	*choose the version >= 1.9.3
+2. sudo apt-get install ruby1.9.* 
+
+<II>settting the octopress:
+
+1. git clone git://github.com/imathis/octopress.git octopress
+2. gem install bundler
+3. bundle install
+4. rake install 
+5. create the github rep
+6. rask setup_github_pages
+7. rake generate
+8. rake deploy
+9. git add. 
+   git commit
+   git push
+
+
+<III>new other pc:
+1. git clone -b source git@github.com:username/username.github.com octopress
+2. cd octopress
+3. git clone git@github.com:username/username.github.com _deplot
+4. cd _deploy
+5. git pull origin master
+6. cd ..
+7. git pull origin source
+
+<IV>wordpress posts import octopress
+1. download tools : https://gist.github.com/chitsaou/1394128 
+file: wordpressdotcom.rb move into the same of octopress's directory  
+2. export the wordpress content to wordpress.xml in wordpress dashboard move into the same of octopress's directory
+3. gem install hpricot
+4. ruby -r "wordpressdotcom.rb" -e "Jekyll::WordpressDotCom.process"
+
+
+<V> create new post
+1. rake new_post["post name"]
+2. open the "post name".markdown file ,edit it
+3. rake generate
+4. rake deploy
+5. push file to github
+	5.1 git add .
+	5.2 git commit -m "commit message"\
+	5.3 git push origin source
